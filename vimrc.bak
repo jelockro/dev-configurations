@@ -3,6 +3,8 @@ filetype off
 set nu     " Enable line numbers
 syntax on  " Enable syntax highlighting
 
+
+
 " How many columns of whitespace a \t is worth
 set tabstop=4 
 
