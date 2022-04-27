@@ -1,7 +1,7 @@
 #!/bin/bash
 cp vimrc.bak ~/.vimrc
 sudo apt-get update
-sudo apt-get install -y vim git ctags
+sudo apt-get install -y vim git ctags zsh curl fonts-powerline
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/pack/vendor/start
 git clone --depth 1 \
@@ -11,3 +11,4 @@ cd ~/.vim/bundle
 sudo pacman -S ctags
 git clone https://github.com/VundleVim/Vundle.vim.git Vundle.vim
 vim +PluginInstall +qall
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
