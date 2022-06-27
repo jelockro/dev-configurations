@@ -33,4 +33,4 @@ echo "Sanity Check: What is ZSH_CUSTOM: $ZSH_CUSTOM. \n"
 echo "Where are we: $(pwd) \n" 
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
